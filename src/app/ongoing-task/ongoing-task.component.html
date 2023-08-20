@@ -1,0 +1,23 @@
+<table class="table mb-4">
+    <thead>
+        <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Todo item</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop through the 'todos' array and display each task -->
+        <tr *ngFor="let todo of todos">
+            <!-- Task ID -->
+            <th scope="row">{{ todo.id }}</th>
+            <!-- Task description -->
+            <td>{{ todo.task }}</td>
+            <td>
+                <!-- Actions column with the delete button -->
+                <button type="submit" class="btn btn-danger" 
+                (click)="updateTask(todo.id)" >Pending</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

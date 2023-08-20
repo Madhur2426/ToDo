@@ -1,0 +1,14 @@
+<table class="table mb-4">
+    <thead>
+        <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Todo item</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of completedTasks">
+            <th scope="row">{{ todo.id }}</th>
+            <td>{{ todo.task }}</td>
+        </tr>
+    </tbody>
+</table>
